@@ -1,0 +1,8 @@
+{
+  "realm": "my-realm",
+  "auth-server-url": "http://192.168.201.188:8080/auth/",
+  "ssl-required": "external",
+  "resource": "spring-boot-security",
+  "public-client": true,
+  "confidential-port": 0
+}
