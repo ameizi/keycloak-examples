@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>net.aimeizi</groupId>
-    <artifactId>keycloak-spring-boot-example</artifactId>
+    <artifactId>keycloak-springboot-example</artifactId>
     <version>1.0.0</version>
-    <name>keycloak-spring-boot-example</name>
-    <description>keycloak-spring-boot-example</description>
+    <name>keycloak-springboot-example</name>
+    <description>keycloak-springboot-example</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
