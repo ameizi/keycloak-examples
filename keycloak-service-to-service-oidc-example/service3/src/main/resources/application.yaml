@@ -1,0 +1,23 @@
+server:
+  port: 10003
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://192.168.201.188:8080/auth/realms/my-realm
+          jwk-set-uri: http://192.168.201.188:8080/auth/realms/my-realm/protocol/openid-connect/certs
+      client:
+        registration:
+          keycloak:
+            client-id: service3
+            client-secret: 16f4e851-ab61-4e97-9daf-28a3373ffd7d
+            authorization-grant-type: client_credentials
+        provider:
+          keycloak:
+            authorization-uri: http://192.168.201.188:8080/auth/realms/my-realm/protocol/openid-connect/auth
+            token-uri: http://192.168.201.188:8080/auth/realms/my-realm/protocol/openid-connect/token
+            user-info-uri: http://192.168.201.188:8080/auth/realms/my-realm/protocol/openid-connect/userinfo
+            jwk-set-uri: http://192.168.201.188:8080/auth/realms/my-realm/protocol/openid-connect/certs
+            introspection-uri: http://192.168.201.188:8080/auth/realms/my-realm/protocol/openid-connect/token/introspect
